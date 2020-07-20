@@ -1,11 +1,4 @@
-# Projet Open Innovation
-# Choruscare Application Mobile
-
-
-
-### Vianney CHEPEAU - I1
-### Jimmy BOUMANS - I1
-### Florian GAUTIER - I1
+# Projet Open Innovation - Choruscare Application Mobile
 
 ## Contexte du projet
 
