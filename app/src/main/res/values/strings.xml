@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Choruscare</string>
+
+    <string name="title_activity_detection_text">DetectionTextActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_add_chant">Ajouter un nouveau chant</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.EditGeneralChantActivity">
+
+    <ScrollView
+        android:id="@+id/scrollViewer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/scrollLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/titreChantET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Titre"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/auteurChantET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Auteur"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/compositeurChantET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Compositeur"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/refrainChantET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Refrain"
+                android:inputType="textMultiLine|text" />
+
+            <EditText
+                android:id="@+id/codaChantET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Coda"
+                android:inputType="textMultiLine|text" />
+
+            <LinearLayout
+                android:id="@+id/coupletContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <RelativeLayout
+                android:id="@+id/file_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button_choose_file"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choisir un fichier" />
+
+                <EditText
+                    android:id="@+id/edit_text_file_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_toEndOf="@+id/button_choose_file"
+                    android:hint="Nom du fichier" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/errorTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="TextView"
+                android:textColor="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/enregistrerChantBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enregistrer le chant" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.TextDetectionActivity">
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@android:color/darker_gray"
+        />
+
+    <TextView
+        android:id="@+id/textDisplayTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prenez une photo afin d'afficher le texte détecté sur l'image"
+        android:layout_below="@+id/myImageView"
+        android:textSize="18dp"
+        android:maxLines="5"/>
+
+    <Button
+        android:id="@+id/captureImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/saveDetectedTextButton"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorAccent"
+        android:text="Prendre une photo et détecter le texte"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/saveDetectedTextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimary"
+        android:text="Enregistrer le texte"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17dp" />
+</RelativeLayout>

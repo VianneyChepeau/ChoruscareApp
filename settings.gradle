@@ -1,0 +1,3 @@
+include ':app', ':greenDaoGenerator'
+rootProject.name='ChantApp'
+include ':opencv_4.2'
